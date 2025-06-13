@@ -1,0 +1,142 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: 'Inter', sans-serif;
+  line-height: 1.6;
+  background-color: #f5fff5;
+  color: #1b3b1b;
+}
+
+/* Header */
+header {
+  position: fixed;
+  width: 100%;
+  background-color: #ffffff;
+  padding: 1em 2em;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 100;
+}
+.logo {
+  font-weight: 600;
+  font-size: 1.2rem;
+  color: #2d6a4f;
+}
+nav ul {
+  display: flex;
+  list-style: none;
+}
+nav ul li {
+  margin-left: 30px;
+}
+nav ul li a {
+  text-decoration: none;
+  color: #2d6a4f;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+nav ul li a:hover {
+  color: #52b788;
+}
+
+/* Hero */
+.hero {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(to right, #d8f3dc, #b7e4c7);
+  padding-top: 80px;
+  text-align: center;
+}
+.hero-content {
+  animation: fadeInUp 1s ease-out forwards;
+}
+.hero-content h1 {
+  font-size: 2.8rem;
+  color: #081c15;
+}
+.hero-content p {
+  font-size: 1.2rem;
+  margin: 1rem auto;
+  max-width: 600px;
+  color: #344e41;
+}
+.btn {
+  display: inline-block;
+  background-color: #2d6a4f;
+  color: #fff;
+  padding: 0.75em 1.8em;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: 500;
+  margin-top: 1rem;
+  transition: background 0.3s;
+}
+.btn:hover {
+  background-color: #1b4332;
+}
+
+/* Info Section */
+.info-section {
+  padding: 4em 2em;
+  background-color: #ffffff;
+  text-align: center;
+  animation: fadeInUp 1s ease-out forwards;
+}
+.info-content h2 {
+  font-size: 2rem;
+  color: #1b4332;
+}
+.info-content p {
+  max-width: 700px;
+  margin: 1rem auto;
+  font-size: 1.05rem;
+  color: #3a5a40;
+}
+
+/* Boxed Project Links */
+.project-links a {
+  display: inline-block;
+  background-color: #2d6a4f;
+  color: white;
+  padding: 0.5em 1.2em;
+  margin: 0.3em;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: 500;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+.project-links a:hover {
+  background-color: #1b4332;
+  transform: translateY(-2px);
+}
+
+/* Footer */
+footer {
+  background: #e9f5ec;
+  padding: 1em;
+  text-align: center;
+  color: #555;
+  font-size: 0.9rem;
+}
+
+/* Scroll Animation */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
